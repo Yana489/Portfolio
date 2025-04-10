@@ -124,6 +124,11 @@ footer a {
     .header__welcome {
         font-size: 3em;
     }
+
+    .header__image img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 480px) {
