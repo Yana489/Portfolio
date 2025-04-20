@@ -56,6 +56,20 @@ footer a {
     margin-bottom: -2px;
 }
 
+.language-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__language {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    display: flex;
+    justify-content: right;
+}
+
 .header__container {
     width: 100%;
     max-width: calc(1280px + 2rem);
@@ -94,7 +108,7 @@ footer a {
     display: inline-block;
     opacity: 0;
     animation-name: fadeIn;
-    animation-duration: 1.3s;
+    animation-duration: 2.4s;
     animation-fill-mode: forwards;
 }
 
@@ -203,6 +217,29 @@ footer a {
     border: 1px solid #2b69fb1f;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+}
+
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 1rem;
+}
+
+.fullscreen-overlay.active {
+    display: flex;
 }
 
 .project-img, .project-text {
