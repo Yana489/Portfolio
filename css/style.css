@@ -24,6 +24,12 @@ h2 {
     line-height: 1;
 }
 
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
 h3 {
     font-size: 1.5rem;
     line-height: 1;
@@ -148,6 +154,11 @@ footer a {
 @media screen and (max-width: 480px) {
     .header__welcome {
         font-size: 2.5em;
+    }
+
+    .header__language {
+        top: 1rem;
+        right: 1rem;
     }
 }
 
@@ -279,6 +290,13 @@ footer a {
 @media screen and (max-width: 1320px) {
     .project-grid {
         gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .projects-text {
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
