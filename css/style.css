@@ -68,6 +68,10 @@ footer a {
     cursor: pointer;
 }
 
+.language-button:focus{
+    border: none;
+}
+
 .header__language {
     position: absolute;
     top: 2rem;

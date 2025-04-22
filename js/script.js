@@ -18,7 +18,6 @@ const updateLanguage = (hash) => {
         location.href = `${window.location.pathname}#de`;
         return;
     }
-    //select.value = hash;
     for (let key in langArr) {
         const elem = document.querySelector(`.lng-${key}`);
         if (elem) {
